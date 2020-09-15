@@ -12,20 +12,24 @@ class Home extends StatelessWidget {
         title: Text('Hola'),
         centerTitle: true,
       ),
-          body: Container(
-        child: Stack(
-          children: [
-            Image(image: AssetImage('assets/images/anton-repponen-99530-unsplash.jpg'),
-            fit: BoxFit.cover,
-            height: double.infinity,
+          body: _buildBody(context),
+    );
+  }
+
+  Container _buildBody(BuildContext context) {
+    return Container(
+      child: Stack(
+        children: [
+          Image(image: AssetImage('assets/images/anton-repponen-99530-unsplash.jpg'),
+          fit: BoxFit.cover,
+          height: double.infinity,
+          ),
+          Center(child: 
+          Text('Hola Maso',
+            style: Theme.of(context).textTheme.headline3,
             ),
-            Center(child: 
-            Text('Hola Maso',
-              style: Theme.of(context).textTheme.headline3,
-              ),
-              ),
-          ],
-        ),
+            ),
+        ],
       ),
     );
   }
