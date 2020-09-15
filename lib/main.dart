@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_ti/constants.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,8 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        //TODO Extraer el color primario de la clase constantes
-        primarySwatch: Colors.teal,
+        primarySwatch: kPrimaryColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       //TODO Separa nuestro home en su propia clase dentro de Screns
